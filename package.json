@@ -1,0 +1,26 @@
+{
+  "name": "proiectbac",
+  "version": "1.0.0",
+  "description": "BAC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiceDayZ/proiectbac.git"
+  },
+  "keywords": [
+    "BAC"
+  ],
+  "author": "Copii de la 402",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NiceDayZ/proiectbac/issues"
+  },
+  "homepage": "https://github.com/NiceDayZ/proiectbac#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0"
+  }
+}
