@@ -1,0 +1,208 @@
+extends layout
+
+block content
+  .all-title-box
+    .container.text-center
+      h1
+        | Blog Single
+        span.m_1 Lorem Ipsum dolroin gravida nibh vel velit.
+  #overviews.section.wb
+    .container
+      .row
+        .col-lg-9.blog-post-single
+          .blog-item
+            .image-blog
+              img.img-fluid(src='images/blog_single.jpg' alt='')
+            .post-content
+              .post-date
+                span.day 30
+                span.month Nov
+              .meta-info-blog
+                span
+                  i.fa.fa-calendar
+                  a(href='#') May 11, 2015
+                span
+                  i.fa.fa-tag
+                  a(href='#') News
+                span
+                  i.fa.fa-comments
+                  a(href='#') 12 Comments
+              .blog-title
+                h2
+                  a(href='#' title='') perferendis doloribus asperiores.
+              .blog-desc
+                p
+                  | Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit....
+                blockquote.default
+                  | Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque eget tempor tellus. Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum.
+                p
+                  | Phasellus tristique commodo libero, eget dignissim turpis dignissim quis. Morbi sit amet laoreet nibh, gravida scelerisque felis. Phasellus ultrices pellentesque ligula et viverra. Integer elementum, risus et tempor ultricies, libero turpis pellentesque massa, at facilisis erat nunc hendrerit erat. Praesent rhoncus, augue nec condimentum porta, magna dui volutpat augue, vitae blandit magna quam in massa. Fusce a rhoncus diam. Proin nec lacinia nibh. Praesent sed nisi sed purus dictum laoreet.
+                p
+                  | Duis at tortor augue. Ut et justo consequat, facilisis lectus facilisis, tincidunt massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vel vestibulum urna. Fusce sed magna posuere, vehicula odio vitae, tempor arcu. Pellentesque eget felis sed eros maximus elementum ultrices a elit. Sed ac sodales enim.
+          .blog-author
+            .author-bio
+              h3.author_name
+                a(href='#') Tom Jobs
+              h5
+                | CEO at 
+                a(href='#') SmartEDU
+              p.author_det
+                | Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt  ut aut reiciendise voluptat maiores alias consequaturs aut perferendis doloribus omnis saperet docendi nec, eos ea alii molestiae aliquand.
+            .author-desc
+              img(src='images/author.jpg' alt='about author')
+              ul.author-social
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-skype
+          .blog-comments
+            h4 Comments (3)
+            #comment-blog
+              ul.comment-list
+                li.comment
+                  .avatar
+                    img.avatar(alt='' src='images/avatar-01.jpg')
+                  .comment-container
+                    h5.comment-author
+                      a(href='#') John Smith
+                    .comment-meta
+                      a.comment-date.link-style1(href='#') February 22, 2015
+                      a.comment-reply-link.link-style3(href='#respond') Reply &raquo;
+                    .comment-body
+                      p
+                        | Ne omnis saperet docendi nec, eos ea alii molestiae aliquand. Latine fuisset mele, mandamus atrioque eu mea, wi forensib argumentum vim an. Te viderer conceptam sed, mea et delenit fabellas probat.
+                li.comment
+                  .avatar
+                    img.avatar(alt='' src='images/avatar-02.jpg')
+                  .comment-container
+                    h5.comment-author
+                      a(href='#') John Smith
+                    .comment-meta
+                      a.comment-date.link-style1(href='#') February 22, 2015
+                      a.comment-reply-link.link-style3(href='#respond') Reply &raquo;
+                    .comment-body
+                      p
+                        | Ne omnis saperet docendi nec, eos ea alii molestiae aliquand. Latine fuisset mele, mandamus atrioque eu mea, wi forensib argumentum vim an. Te viderer conceptam sed, mea et delenit fabellas probat.
+                  ul.children
+                    li.comment
+                      .avatar
+                        img.avatar(alt='' src='images/avatar-03.jpg')
+                      .comment-container
+                        h5.comment-author
+                          a(href='#') Thomas Smith
+                        .comment-meta
+                          a.comment-date.link-style1(href='#') February 14, 2015
+                          a.comment-reply-link.link-style3(href='#respond') Reply &raquo;
+                        .comment-body
+                          p
+                            | Labores pertinax theophrastus vim an. Error ditas in sea, per no omnis iisque nonumes. Est an dicam option, ad quis iriure saperet nec, ignota causae inciderint ex vix. Iisque qualisque imp duo eu, pro reque consequ untur. No vero laudem legere pri, error denique vis ne, duo iusto bonorum.
+          .comments-form
+            h4 Leave a comment
+            .comment-form-main
+              form(action='#')
+                .row
+                  .col-md-4
+                    .form-group
+                      input#commenter-name.form-control(name='commenter-name' placeholder='Name' type='text')
+                  .col-md-4
+                    .form-group
+                      input#commenter-email.form-control(name='commenter-email' placeholder='Email' type='text')
+                  .col-md-4
+                    .form-group
+                      input#commenter-url.form-control(name='commenter-url' placeholder='Website URL' type='text')
+                  .col-md-12
+                    .form-group
+                      textarea#commenter-message.form-control(name='commenter-message' placeholder='Message' cols='30' rows='2')
+                  .col-md-12.post-btn
+                    button.hover-btn-new.orange
+                      span Post Comment
+        // end col
+        .col-lg-3.col-12.right-single
+          .widget-search
+            .site-search-area
+              form#site-searchform(method='get' action='#')
+                div
+                  input#search-k.input-text.form-control(name='search-k' placeholder='Search keywords...' type='text')
+                  input#searchsubmit(value='Search' type='submit')
+          .widget-categories
+            h3.widget-title Categories
+            ul
+              li
+                a(href='#') Political Science
+              li
+                a(href='#') Business Leaders Guide
+              li
+                a(href='#') Become a Product Manage
+              li
+                a(href='#') Language Education
+              li
+                a(href='#') Micro Biology
+              li
+                a(href='#') Social Media Management
+          .widget-tags
+            h3.widget-title Search Tags
+            ul.tags
+              li
+                a(href='#')
+                  b business
+              li
+                a(href='#')
+                  b jquery
+              li
+                a(href='#') corporate
+              li
+                a(href='#') portfolio
+              li
+                a(href='#') css3
+              li
+                a(href='#')
+                  b theme
+              li
+                a(href='#')
+                  b html5
+              li
+                a(href='#')
+                  b mysql
+              li
+                a(href='#') multipurpose
+              li
+                a(href='#') responsive
+              li
+                a(href='#') premium
+              li
+                a(href='#') javascript
+              li
+                a(href='#')
+                  b Best jQuery
+      // end row
+    // end container
+  // end section
+  .parallax.section.dbcolor
+    .container
+      .row.logos
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_01.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_02.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_03.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_04.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_05.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_06.png' alt='')
+      // end row
+    // end container
+  // end section

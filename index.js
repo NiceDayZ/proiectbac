@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
 
+//render the main page
 app.get('/', function(req, res){
   res.render('index');
 });
@@ -20,42 +21,43 @@ app.get('/', function(req, res){
 //  res.sendFile(__dirname+'/about.html');
 //});
 
+//render the about page
 app.get('/about',function(req,res){
     res.render('about');
 });
 
-app.get('/blog.html',function(req,res){
-    res.sendFile(__dirname+'/blog.html');
+//render The Blog-Single page (prb FORUM post)
+app.get('/blog-single',function(req,res){
+    res.render('blog-single');
 });
 
-app.get('/blog-single.html',function(req,res){
-    res.sendFile(__dirname+'/blog-single.html');
+//Render the teachers page
+app.get('/teachers',function(req,res){
+    res.render('teachers');
 });
 
-app.get('/teachers.html',function(req,res){
-    res.sendFile(__dirname+'/teachers.html');
+//Render the pricing page
+app.get('/pricing',function(req,res){
+    res.render('pricing');
 });
 
-app.get('/pricing.html',function(req,res){
-    res.sendFile(__dirname+'/pricing.html');
-});
-
+//Render the contact page
 app.get('/contact',function(req,res){
     res.render('contact');
 });
 
-app.get('/course-grid-2.html',function(req,res){
-    res.sendFile(__dirname+'/course-grid-2.html');
+
+//Render the course page (MAYBE course page)
+app.get('/course-grid-4',function(req,res){
+    res.render('course-grid-4');
 });
 
-app.get('/course-grid-3.html',function(req,res){
-    res.sendFile(__dirname+'/course-grid-3.html');
+//Render the blog page (MAYBE course page 2)
+app.get('/blog',function(req,res){
+    res.render('blog');
 });
 
-app.get('/course-grid-4.html',function(req,res){
-    res.sendFile(__dirname+'/course-grid-4.html');
-});
-
+//port 8080(DEFAULT)
 http.listen(port, function(){
   console.log('listening on *:' + port);
 });

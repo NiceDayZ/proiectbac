@@ -5,7 +5,7 @@ meta(http-equiv='X-UA-Compatible' content='IE=edge')
 // Mobile Metas
 meta(name='viewport' content='width=device-width, initial-scale=1')
 // Site Metas
-title SmartEDU - Education Responsive HTML5 Template
+title SmartBAC - Platformă Educațională
 meta(name='keywords' content='')
 meta(name='description' content='')
 meta(name='author' content='')
@@ -33,14 +33,14 @@ script(src='js/modernizer.js')
     .modal-content
       .modal-header.tit-up
         button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
-        h4.modal-title Customer Login
+        h4.modal-title Login
       .modal-body.customer-box
         // Nav tabs
         ul.nav.nav-tabs
           li
             a.active(href='#Login' data-toggle='tab') Login
           li
-            a(href='#Registration' data-toggle='tab') Registration
+            a(href='#Registration' data-toggle='tab') Înregistrare
         // Tab panes
         .tab-content
           #Login.tab-pane.active
@@ -50,32 +50,32 @@ script(src='js/modernizer.js')
                   input#email1.form-control(placeholder='Name' type='text')
               .form-group
                 .col-sm-12
-                  input#exampleInputPassword1.form-control(placeholder='Email' type='email')
+                  input#exampleInputPassword1.form-control(placeholder='Password' type='password')
               .row
                 .col-sm-10
                   button.btn.btn-light.btn-radius.btn-brd.grd1(type='submit')
-                    | Submit
-                  a.for-pwd(href='javascript:;') Forgot your password?
+                    | Autentificare
+                  a.for-pwd(href='javascript:;') Ai uitat parola?
           #Registration.tab-pane
             form.form-horizontal(role='form')
               .form-group
                 .col-sm-12
-                  input.form-control(placeholder='Name' type='text')
+                  input.form-control(placeholder='Nume de utilizator' type='text')
               .form-group
                 .col-sm-12
                   input#email.form-control(placeholder='Email' type='email')
               .form-group
                 .col-sm-12
-                  input#mobile.form-control(placeholder='Mobile' type='email')
+                  input#mobile.form-control(placeholder='Telefon' type='text')
               .form-group
                 .col-sm-12
-                  input#password.form-control(placeholder='Password' type='password')
+                  input#password.form-control(placeholder='Parola' type='password')
               .row
                 .col-sm-10
                   button.btn.btn-light.btn-radius.btn-brd.grd1(type='button')
-                    | Save &amp; Continue
+                    | Salvează &amp; Continuă
                   button.btn.btn-light.btn-radius.btn-brd.grd1(type='button')
-                    | Cancel
+                    | Anulează
 // LOADER
 #preloader
   .loader-container
@@ -95,24 +95,22 @@ header.top-navbar
       #navbars-host.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item
-            a.nav-link(href='/') Home
+            a.nav-link(href='/') Acasă
           li.nav-item
-            a.nav-link(href='/about') About Us
+            a.nav-link(href='/about') Despre Noi
           li.nav-item.dropdown
-            a#dropdown-a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown') Course 
+            a#dropdown-a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown') Materii 
             .dropdown-menu(aria-labelledby='dropdown-a')
-              a.dropdown-item(href='/course-grid-2') Course Grid 2 
-              a.dropdown-item(href='/course-grid-3') Course Grid 3 
-              a.dropdown-item(href='/course-grid-4') Course Grid 4 
+              a.dropdown-item(href='/course-grid-4') Romană 
+              a.dropdown-item(href='/course-grid-4') Matematică 
+              a.dropdown-item(href='/course-grid-4') Informatică 
           li.nav-item.dropdown
-            a#dropdown-a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown') Blog 
+            a#dropdown-a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown') Forum 
             .dropdown-menu(aria-labelledby='dropdown-a')
-              a.dropdown-item(href='/blog') Blog 
-              a.dropdown-item(href='/blog-single') Blog single 
+              a.dropdown-item(href='/blog') Forum 
+              a.dropdown-item(href='/blog-single') Exemplu Întrebare 
           li.nav-item
-            a.nav-link(href='/teachers') Teachers
-          li.nav-item
-            a.nav-link(href='/pricing') Pricing
+            a.nav-link(href='/teachers') Colaboratori
           li.nav-item
             a.nav-link(href='/contact') Contact
         ul.nav.navbar-nav.navbar-right
@@ -189,10 +187,10 @@ footer.footer
     .footer-distributed
       .footer-center
         p.footer-company-name
-          | All Rights Reserved. &copy; 2018 
-          a(href='#') SmartEDU
+          | All Rights Reserved. &copy; 2019 
+          a(href='#') We &#9829 4ț
           |  Design By : 
-          a(href='https://html.design/') html design
+          a(href='') We &#9829 4ț
   // end container
 // end copyrights
 a#scroll-to-top.dmtop.global-radius(href='#')
