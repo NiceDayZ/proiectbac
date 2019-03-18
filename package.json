@@ -21,6 +21,7 @@
   "homepage": "https://github.com/NiceDayZ/proiectbac#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "pug": "^2.0.3"
   }
 }

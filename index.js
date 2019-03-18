@@ -4,17 +4,24 @@ var http = require('http').Server(app);
 var port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
+app.set('view engine', 'pug');
+app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.render('index');
 });
 
-app.get('/index.html', function(req, res){
-    res.sendFile(__dirname + '/index.html');
-  });
+//app.get('/',function(req,res){
+//    res.sendFile(__dirname+'/index.html');
+//});
 
-app.get('/about.html',function(req,res){
-  res.sendFile(__dirname+'/about.html');
+
+//app.get('/about',function(req,res){
+//  res.sendFile(__dirname+'/about.html');
+//});
+
+app.get('/about',function(req,res){
+    res.render('about');
 });
 
 app.get('/blog.html',function(req,res){
@@ -33,8 +40,8 @@ app.get('/pricing.html',function(req,res){
     res.sendFile(__dirname+'/pricing.html');
 });
 
-app.get('/contact.html',function(req,res){
-    res.sendFile(__dirname+'/contact.html');
+app.get('/contact',function(req,res){
+    res.render('contact');
 });
 
 app.get('/course-grid-2.html',function(req,res){

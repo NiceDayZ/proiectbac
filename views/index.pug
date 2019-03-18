@@ -1,0 +1,529 @@
+extends layout
+
+block content
+  #carouselExampleControls.carousel.slide.bs-slider.box-slider(data-ride='carousel' data-pause='hover' data-interval='false')
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleControls' data-slide-to='0')
+      li(data-target='#carouselExampleControls' data-slide-to='1')
+      li(data-target='#carouselExampleControls' data-slide-to='2')
+    .carousel-inner(role='listbox')
+      .carousel-item.active
+        #home.first-section(style="background-image:url('images/slider-01.jpg');")
+          .dtab
+            .container
+              .row
+                .col-md-12.col-sm-12.text-right
+                  .big-tagline
+                    h2
+                      strong SmartEDU 
+                      |  education College
+                    p.lead
+                      | With Landigoo responsive landing page template, you can promote your all hosting, domain and email services.
+                    a.hover-btn-new(href='#')
+                      span Contact Us
+                    a.hover-btn-new(href='#')
+                      span Read More
+              // end row
+            // end container
+        // end section
+      .carousel-item
+        #home.first-section(style="background-image:url('images/slider-02.jpg');")
+          .dtab
+            .container
+              .row
+                .col-md-12.col-sm-12.text-left
+                  .big-tagline
+                    h2(data-animation='animated zoomInRight')
+                      | SmartEDU 
+                      strong education school
+                    p.lead(data-animation='animated fadeInLeft')
+                      | With Landigoo responsive landing page template, you can promote your all hosting, domain and email services.
+                    a.hover-btn-new(href='#')
+                      span Contact Us
+                    a.hover-btn-new(href='#')
+                      span Read More
+              // end row
+            // end container
+        // end section
+      .carousel-item
+        #home.first-section(style="background-image:url('images/slider-03.jpg');")
+          .dtab
+            .container
+              .row
+                .col-md-12.col-sm-12.text-center
+                  .big-tagline
+                    h2(data-animation='animated zoomInRight')
+                      strong VPS Servers
+                      |  Company
+                    p.lead(data-animation='animated fadeInLeft')
+                      | 1 IP included with each server
+                      | Your Choice of any OS (CentOS, Windows, Debian, Fedora)
+                      | FREE Reboots
+                    a.hover-btn-new(href='#')
+                      span Contact Us
+                    a.hover-btn-new(href='#')
+                      span Read More
+              // end row
+            // end container
+        // end section
+      // Left Control
+      a.new-effect.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+        span.fa.fa-angle-left(aria-hidden='true')
+        span.sr-only Previous
+      // Right Control
+      a.new-effect.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+        span.fa.fa-angle-right(aria-hidden='true')
+        span.sr-only Next
+  #overviews.section.wb
+    .container
+      .section-title.row.text-center
+        .col-md-8.offset-md-2
+          h3 About
+          p.lead
+            | Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!
+      // end title
+      .row.align-items-center
+        .col-xl-6.col-lg-6.col-md-12.col-sm-12
+          .message-box
+            h4 2018 BEST SmartEDU education school
+            h2 Welcome to SmartEDU education school
+            p
+              | Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.
+            p
+              | Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque.
+            a.hover-btn-new.orange(href='#')
+              span Learn More
+          // end messagebox
+        // end col
+        .col-xl-6.col-lg-6.col-md-12.col-sm-12
+          .post-media.wow.fadeIn
+            img.img-fluid.img-rounded(src='images/about_02.jpg' alt='')
+          // end media
+        // end col
+      .row.align-items-center
+        .col-xl-6.col-lg-6.col-md-12.col-sm-12
+          .post-media.wow.fadeIn
+            img.img-fluid.img-rounded(src='images/about_03.jpg' alt='')
+          // end media
+        // end col
+        .col-xl-6.col-lg-6.col-md-12.col-sm-12
+          .message-box
+            h2 The standard Lorem Ipsum passage, used since the 1500s
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p
+              | Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum.
+            a.hover-btn-new.orange(href='#')
+              span Learn More
+          // end messagebox
+        // end col
+      // end row
+    // end container
+  // end section
+  section.section.lb.page-section
+    .container
+      .section-title.row.text-center
+        .col-md-8.offset-md-2
+          h3 Our history
+          p.lead
+            | Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!
+      // end title
+      .timeline
+        .timeline__wrap
+          .timeline__items
+            .timeline__item
+              .timeline__content.img-bg-01
+                h2 2018
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-02
+                h2 2015
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-03
+                h2 2014
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-04
+                h2 2012
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-01
+                h2 2010
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-02
+                h2 2007
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-03
+                h2 2004
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+            .timeline__item
+              .timeline__content.img-bg-04
+                h2 2002
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                  | ipsum dolor sit amet, consectetur adipiscing elit.
+  .section.cl
+    .container
+      .row.text-left.stat-wrap
+        .col-md-4.col-sm-4.col-xs-12
+          span.global-radius.icon_wrap.effect-1.alignleft(data-scroll='')
+            i.flaticon-study
+          p.stat_count 12000
+          h3 Students
+        // end col
+        .col-md-4.col-sm-4.col-xs-12
+          span.global-radius.icon_wrap.effect-1.alignleft(data-scroll='')
+            i.flaticon-online
+          p.stat_count 240
+          h3 Courses
+        // end col
+        .col-md-4.col-sm-4.col-xs-12
+          span.global-radius.icon_wrap.effect-1.alignleft(data-scroll='')
+            i.flaticon-years
+          p.stat_count 55
+          h3 Years Completed
+        // end col
+      // end row
+    // end container
+  // end section
+  #plan.section.lb
+    .container
+      .section-title.text-center
+        h3 Choose Your Plan
+        p
+          | Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      // end title
+      .row
+        .col-md-6.offset-md-3
+          .message-box
+            ul#myTabs.nav.nav-pills.nav-stacked
+              li
+                a.active(href='#tab1' data-toggle='pill') Monthly Subscription
+              li
+                a(href='#tab2' data-toggle='pill') Yearly Subscription
+        // end col
+      hr.invis
+      .row
+        .col-md-12
+          .tab-content
+            #tab1.tab-pane.active.fade.show
+              .row.text-center
+                .col-md-4
+                  .pricing-table.pricing-table-highlighted
+                    .pricing-table-header.grd1
+                      h2 $45
+                      h3 per month
+                    .pricing-table-space
+                    .pricing-table-features
+                      p
+                        i.fa.fa-envelope-o
+                        strong 250
+                        |  Email Addresses
+                      p
+                        i.fa.fa-rocket
+                        strong 125GB
+                        |  of Storage
+                      p
+                        i.fa.fa-database
+                        strong 140
+                        |  Databases
+                      p
+                        i.fa.fa-link
+                        strong 60
+                        |  Domains
+                      p
+                        i.fa.fa-life-ring
+                        strong 24/7 Unlimited
+                        |  Support
+                    .pricing-table-sign-up
+                      a.hover-btn-new.orange(href='#')
+                        span Order Now
+                .col-md-4
+                  .pricing-table.pricing-table-highlighted
+                    .pricing-table-header.grd1
+                      h2 $59
+                      h3 per month
+                    .pricing-table-space
+                    .pricing-table-features
+                      p
+                        i.fa.fa-envelope-o
+                        strong 150
+                        |  Email Addresses
+                      p
+                        i.fa.fa-rocket
+                        strong 65GB
+                        |  of Storage
+                      p
+                        i.fa.fa-database
+                        strong 60
+                        |  Databases
+                      p
+                        i.fa.fa-link
+                        strong 30
+                        |  Domains
+                      p
+                        i.fa.fa-life-ring
+                        strong 24/7 Unlimited
+                        |  Support
+                    .pricing-table-sign-up
+                      a.hover-btn-new.orange(href='#')
+                        span Order Now
+                .col-md-4
+                  .pricing-table.pricing-table-highlighted
+                    .pricing-table-header.grd1
+                      h2 $85
+                      h3 per month
+                    .pricing-table-space
+                    .pricing-table-features
+                      p
+                        i.fa.fa-envelope-o
+                        strong 250
+                        |  Email Addresses
+                      p
+                        i.fa.fa-rocket
+                        strong 125GB
+                        |  of Storage
+                      p
+                        i.fa.fa-database
+                        strong 140
+                        |  Databases
+                      p
+                        i.fa.fa-link
+                        strong 60
+                        |  Domains
+                      p
+                        i.fa.fa-life-ring
+                        strong 24/7 Unlimited
+                        |  Support
+                    .pricing-table-sign-up
+                      a.hover-btn-new.orange(href='#')
+                        span Order Now
+              // end row
+            // end pane
+            #tab2.tab-pane.fade
+              .row.text-center
+                .col-md-4
+                  .pricing-table.pricing-table-highlighted
+                    .pricing-table-header.grd1
+                      h2 $477
+                      h3 Year
+                    .pricing-table-space
+                    .pricing-table-features
+                      p
+                        i.fa.fa-envelope-o
+                        strong 250
+                        |  Email Addresses
+                      p
+                        i.fa.fa-rocket
+                        strong 125GB
+                        |  of Storage
+                      p
+                        i.fa.fa-database
+                        strong 140
+                        |  Databases
+                      p
+                        i.fa.fa-link
+                        strong 60
+                        |  Domains
+                      p
+                        i.fa.fa-life-ring
+                        strong 24/7 Unlimited
+                        |  Support
+                    .pricing-table-sign-up
+                      a.hover-btn-new.orange(href='#')
+                        span Order Now
+                .col-md-4
+                  .pricing-table.pricing-table-highlighted
+                    .pricing-table-header.grd1
+                      h2 $485
+                      h3 Year
+                    .pricing-table-space
+                    .pricing-table-features
+                      p
+                        i.fa.fa-envelope-o
+                        strong 150
+                        |  Email Addresses
+                      p
+                        i.fa.fa-rocket
+                        strong 65GB
+                        |  of Storage
+                      p
+                        i.fa.fa-database
+                        strong 60
+                        |  Databases
+                      p
+                        i.fa.fa-link
+                        strong 30
+                        |  Domains
+                      p
+                        i.fa.fa-life-ring
+                        strong 24/7 Unlimited
+                        |  Support
+                    .pricing-table-sign-up
+                      a.hover-btn-new.orange(href='#')
+                        span Order Now
+                .col-md-4
+                  .pricing-table.pricing-table-highlighted
+                    .pricing-table-header.grd1
+                      h2 $500
+                      h3 Year
+                    .pricing-table-space
+                    .pricing-table-features
+                      p
+                        i.fa.fa-envelope-o
+                        strong 250
+                        |  Email Addresses
+                      p
+                        i.fa.fa-rocket
+                        strong 125GB
+                        |  of Storage
+                      p
+                        i.fa.fa-database
+                        strong 140
+                        |  Databases
+                      p
+                        i.fa.fa-link
+                        strong 60
+                        |  Domains
+                      p
+                        i.fa.fa-life-ring
+                        strong 24/7 Unlimited
+                        |  Support
+                    .pricing-table-sign-up
+                      a.hover-btn-new.orange(href='#')
+                        span Order Now
+              // end row
+            // end pane
+          // end content
+        // end col
+      // end row
+    // end container
+  // end section
+  #testimonials.parallax.section.db.parallax-off(style="background-image:url('images/parallax_04.jpg');")
+    .container
+      .section-title.text-center
+        h3 Testimonials
+        p
+          | Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      // end title
+      .row
+        .col-md-12.col-sm-12
+          .testi-carousel.owl-carousel.owl-theme
+            .testimonial.clearfix
+              .testi-meta
+                img.img-fluid(src='images/testi_01.png' alt='')
+                h4 James Fernando 
+              .desc
+                h3
+                  i.fa.fa-quote-left
+                  |  Wonderful Support!
+                p.lead
+                  | They have got my project on time with the competition with a sed highly skilled, and experienced &amp; professional team.
+              // end testi-meta
+            // end testimonial
+            .testimonial.clearfix
+              .testi-meta
+                img.img-fluid(src='images/testi_02.png' alt='')
+                h4 Jacques Philips 
+              .desc
+                h3
+                  i.fa.fa-quote-left
+                  |  Awesome Services!
+                p.lead
+                  | Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.
+              // end testi-meta
+            // end testimonial
+            .testimonial.clearfix
+              .testi-meta
+                img.img-fluid(src='images/testi_03.png' alt='')
+                h4 Venanda Mercy 
+              .desc
+                h3
+                  i.fa.fa-quote-left
+                  |  Great &amp; Talented Team!
+                p.lead
+                  | The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure.
+              // end testi-meta
+            // end testimonial
+            .testimonial.clearfix
+              .testi-meta
+                img.img-fluid(src='images/testi_01.png' alt='')
+                h4 James Fernando 
+              .desc
+                h3
+                  i.fa.fa-quote-left
+                  |  Wonderful Support!
+                p.lead
+                  | They have got my project on time with the competition with a sed highly skilled, and experienced &amp; professional team.
+              // end testi-meta
+            // end testimonial
+            .testimonial.clearfix
+              .testi-meta
+                img.img-fluid(src='images/testi_02.png' alt='')
+                h4 Jacques Philips 
+              .desc
+                h3
+                  i.fa.fa-quote-left
+                  |  Awesome Services!
+                p.lead
+                  | Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.
+              // end testi-meta
+            // end testimonial
+            .testimonial.clearfix
+              .testi-meta
+                img.img-fluid(src='images/testi_03.png' alt='')
+                h4 Venanda Mercy 
+              .desc
+                h3
+                  i.fa.fa-quote-left
+                  |  Great &amp; Talented Team!
+                p.lead
+                  | The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure.
+              // end testi-meta
+            // end testimonial
+          // end carousel
+        // end col
+      // end row
+    // end container
+  // end section
+  .parallax.section.dbcolor
+    .container
+      .row.logos
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_01.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_02.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_03.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_04.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_05.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_06.png' alt='')
+
+  

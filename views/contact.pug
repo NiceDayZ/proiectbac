@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  .all-title-box
+    .container.text-center
+      h1
+        | Contact
+        span.m_1 Lorem Ipsum dolroin gravida nibh vel velit.
+  #contact.section.wb
+    .container
+      .section-title.text-center
+        h3 Need Help? Sure we are Online!
+        p.lead
+          | Let us give you more details about the special offer website you want us. Please fill out the form below. 
+          br
+          | We have million of website owners who happy to work with us!
+      // end title
+      .row
+        .col-xl-6.col-md-12.col-sm-12
+          .contact_form
+            #message
+            form#contactform(action='contact.php' name='contactform' method='post')
+              .row.row-fluid
+                .col-lg-6.col-md-6.col-sm-6
+                  input#first_name.form-control(type='text' name='first_name' placeholder='First Name')
+                .col-lg-6.col-md-6.col-sm-6
+                  input#last_name.form-control(type='text' name='last_name' placeholder='Last Name')
+                .col-lg-6.col-md-6.col-sm-6
+                  input#email.form-control(type='email' name='email' placeholder='Your Email')
+                .col-lg-6.col-md-6.col-sm-6
+                  input#phone.form-control(type='text' name='phone' placeholder='Your Phone')
+                .col-lg-12.col-md-12.col-sm-12
+                  textarea#comments.form-control(name='comments' rows='6' placeholder='Give us more details..')
+                .text-center.pd
+                  button#submit.btn.btn-light.btn-radius.btn-brd.grd1.btn-block(type='submit' value='SEND') Get a Quote
+        // end col
+        .col-xl-6.col-md-12.col-sm-12
+          .map-box
+            #custom-places.small-map
+      // end row
+    // end container
+  // end section
+  .parallax.section.dbcolor
+    .container
+      .row.logos
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_01.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_02.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_03.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_04.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_05.png' alt='')
+        .col-md-2.col-sm-2.col-xs-6.wow.fadeInUp
+          a(href='#')
+            img.img-repsonsive(src='images/logo_06.png' alt='')
+      // end row
+    // end container
+  // end section
