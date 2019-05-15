@@ -1,1 +1,2 @@
-linguist-language=JavaScript
+special-vendored-path/* linguist-vendored
+*.html linguist-vendored=false
